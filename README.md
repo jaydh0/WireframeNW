@@ -1,1 +1,1 @@
-# WireframeNW
+This is a complete file upload for my Garden Project assignment.
