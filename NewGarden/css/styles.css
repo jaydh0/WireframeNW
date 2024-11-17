@@ -53,6 +53,7 @@ h1 a{
     color: #eee;
     text-decoration: none;
 }
+
 h2{
     color: rgb(35,102, 12);
 }
@@ -83,7 +84,6 @@ nav a {
     padding: 10px 40px 10px 40px;
 }
 
-
 nav a:hover {
     text-shadow: 0px 0px 1px rgb(20, 70, 20);
     text-shadow: 2px 2px 10px white;
@@ -93,8 +93,6 @@ nav a:hover {
     width: 90%;
     margin: auto;
 }
-
-
 
 ul{
     padding: 0px;
@@ -119,22 +117,21 @@ ul{
 #categories img{
     width: 160px;
     height: 160px;
-    float: left;
-    overflow: auto;
     object-fit: cover;
+    float: left;
+    margin-right: 20px;
 }
 
 #categories section{
     margin-bottom: 20px;
     float: left;
     width: 50%;
-    
+    overflow: auto;
 }
 
 #categories h3{
     margin-top: 0;
 }
-
 
 nav{
     float: left;
@@ -148,7 +145,7 @@ nav{
 .icon{
     display: block;
     color: rgb(35,102, 12);
-    font-size: 3em;;
+    font-size: 3em;
 }
 
 .item25{
@@ -161,3 +158,66 @@ nav{
     overflow: auto;
 }
 
+.mobile{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    nav{
+        float: none;
+        display: inline block;
+        border-bottom:1px solid rgb(158,194, 143);
+    }
+
+    footer nav ul li{
+        display: block;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+
+    nav a{
+        padding: 10px 30px;
+    }
+
+    #categories section{
+        float: none;
+        width: 100%;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+}
+
+@media (max-width: 760px) {
+    .desktop{
+        display: none;
+    }
+
+    nav{
+        border-bottom:1px solid rgb(158,194, 143);
+        display: block;
+    }
+
+    .item25{
+        width: 50%;
+    }
+
+    #categories img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .item33{
+        float: none;
+        display: block;
+        padding-left: 40%;
+    }
+}

@@ -1,1 +1,1 @@
-This is a complete file upload for my Garden Project assignment.
+The whole webpage is now done and the webpage is responsive for tablet and phone dimensions. 
